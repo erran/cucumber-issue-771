@@ -11,4 +11,5 @@ The following usages of cucumber fail with or without the `--tags` option. These
 
 ## Passing
 * `cucumber --exclude features/api/buckets.feature`
-* `cucumber --exclude features/subdirectory/nested.feature`
+* `cucumber features/subdirectory/nested.feature`
+* `cucumber features/subdirectory/nested.feature --tags @pry`
