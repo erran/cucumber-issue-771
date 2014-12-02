@@ -3,7 +3,7 @@ An example use case that reproduces cucumber/cucumber#771. The file `nested.feat
 
 The following usages of cucumber fail with or without the `--tags` option. These all load the empty file [features/api/buckets.feature](features/api/buckets.feature).
 
-## [cucumber@2.0.0.beta.3](https://github.com/erran/cucumber-issue-771/tree/2.0.0.beta.3#readme)
+## [cucumber@2.0.0.beta.3](https://github.com/erran/cucumber-issue-771/tree/master#readme)
 ### Failing
 * `cucumber`
 * `cucumber --tags @pry`
