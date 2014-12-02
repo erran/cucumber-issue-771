@@ -3,9 +3,9 @@ Feature: A nested file
   I want to use subdirectories
   So that I can better organize my feature files
 
-  @pry
+  @sometag
   Scenario: A plain-old scenario
     Given I have a feature file
     And I wrote a scenario
-    When I run `cucumber features/subdirectory/nested.feature`
+    When I run `cucumber --tags @sometag`
     Then I should see cucumber run successfully
