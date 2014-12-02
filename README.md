@@ -3,13 +3,24 @@ An example use case that reproduces cucumber/cucumber#771. The file `nested.feat
 
 The following usages of cucumber fail with or without the `--tags` option. These all load the empty file [features/api/buckets.feature](features/api/buckets.feature).
 
-## Failing
+## [cucumber@2.0.0.beta.3](https://github.com/erran/cucumber-issue-771/tree/2.0.0.beta.3#readme)
+### Failing
 * `cucumber`
 * `cucumber --tags @pry`
 * `cucumber features/api/`
 * `cucumber features/api/buckets.feature`
 
-## Passing
+### Passing
+* `cucumber --exclude features/api/buckets.feature`
+* `cucumber features/subdirectory/nested.feature`
+* `cucumber features/subdirectory/nested.feature --tags @pry`
+
+## [cucumber@1.3.17](https://github.com/erran/cucumber-issue-771/tree/v1.3.x#readme)
+### Passing
+* `cucumber`
+* `cucumber --tags @pry`
+* `cucumber features/api/`
+* `cucumber features/api/buckets.feature`
 * `cucumber --exclude features/api/buckets.feature`
 * `cucumber features/subdirectory/nested.feature`
 * `cucumber features/subdirectory/nested.feature --tags @pry`
