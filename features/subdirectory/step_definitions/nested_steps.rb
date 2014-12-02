@@ -4,7 +4,7 @@ end
 Given(/^I wrote a scenario$/) do
 end
 
-When(/^I run `cucumber features\/subdirectory\/nested\.feature`$/) do
+When(/^I run `(.*)`$/) do |some_action|
 end
 
 Then(/^I should see cucumber run successfully$/) do
