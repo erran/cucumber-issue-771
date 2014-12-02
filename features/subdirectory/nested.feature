@@ -1,9 +1,9 @@
-@pry
 Feature: A nested file
   As a Cucumber user
   I want to use subdirectories
   So that I can better organize my feature files
 
+  @pry
   Scenario: A plain-old scenario
     Given I have a feature file
     And I wrote a scenario
